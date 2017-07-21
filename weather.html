@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather App</title>
+	<link rel="stylesheet" href="style.css">
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+
+<body background="http://www.macwallhd.com/wp-content/Wallpapers/20121114/The%20World%20Widescren%20Over%20Blue%20Sky254.jpg">
+
+	<div class="container">
+		<div id="header">Weather App</div>
+		<br><br>
+		<div id="weather"></div>
+		
+		<div class="location_container">
+			<p>Location: <span id="location">Denver, Colorado</span> &nbsp;<button onClick="showForm()">Change</button></p>
+
+			<form method="get" id="locationForm">
+				<fieldset>
+					<ul class="list-reset">
+						<li class="form-field">
+							<label for="city-search">City Name</label>
+							<input type="text" id="city-search" placeholder="e.g. Denver, CO">
+						</li>
+					</ul>
+				</fieldset>
+				<button>Update Location</button>
+			</form>
+
+		</div>
+
+		<p>Temperature: <span id="temp"></span></p>
+		<p>Wind speed: <span id="wind"></span></p>
+
+		<p id="geo"></p>
+	</div>
+
+<script src="script.js"></script>	
+<!--<script asynce defer src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"></script>-->
+</body>
+</html>
